@@ -1,0 +1,23 @@
+/* Launchpad: todas las apps en cuadricula, a pantalla completa */
+@import "config.rasi"
+configuration {
+    font: "Inter 13";
+}
+window {
+    fullscreen: true;
+    location: center;
+    y-offset: 0;
+    width: 100%;
+    border: 0;
+    border-radius: 0;
+    background-color: #1C1C1EEE;
+    padding: 90px 260px;
+}
+inputbar { margin: 0 640px 60px 640px; background-color: #3A3A3C; border-radius: 14px; padding: 14px 20px; }
+icono-lupa { size: 30px; }
+entry { font: "Inter 20"; placeholder: "Buscar"; cursor-color: #F2F2F7; }
+listview { columns: 7; lines: 5; spacing: 30px; border: 0; flow: horizontal; fixed-columns: true; }
+element { orientation: vertical; padding: 16px 6px; border-radius: 18px; spacing: 10px; }
+element selected.normal, element selected.active { background-color: #3A3A3C; }
+element-icon { size: 96px; horizontal-align: 0.5; }
+element-text { horizontal-align: 0.5; font: "Inter 14"; }

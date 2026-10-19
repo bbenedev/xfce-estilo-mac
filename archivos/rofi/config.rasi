@@ -1,0 +1,48 @@
+/* Buscador estilo Spotlight de Mac (tecla Windows + Espacio o la lupa de arriba) */
+configuration {
+    modi: "drun,run,window";
+    show-icons: true;
+    icon-theme: "@ICONOS@";
+    font: "Inter 15";
+    display-drun: "";
+    display-run: "";
+    display-window: "";
+    drun-display-format: "{name}";
+}
+* {
+    fondo: #262628F5;
+    borde: #48484A;
+    marcado: @ACENTO@;
+    texto: #F2F2F7;
+    gris: #8E8E93;
+    background-color: transparent;
+    text-color: @texto;
+}
+window {
+    location: north;
+    y-offset: 320px;
+    width: 820px;
+    background-color: @fondo;
+    border: 1px;
+    border-color: @borde;
+    border-radius: 18px;
+    padding: 10px;
+}
+mainbox { children: [inputbar, listview]; spacing: 6px; }
+inputbar {
+    children: [icono-lupa, entry];
+    spacing: 14px;
+    padding: 18px 20px;
+}
+icono-lupa {
+    expand: false;
+    filename: "system-search";
+    size: 40px;
+}
+entry { font: "Inter 24"; placeholder: "Búsqueda Spotlight"; placeholder-color: @gris; vertical-align: 0.5; cursor-color: @texto; }
+listview { lines: 7; columns: 1; spacing: 2px; fixed-height: false; border: 1px 0 0 0; border-color: @borde; padding: 8px 0 0 0; }
+element { padding: 10px 14px; border-radius: 10px; spacing: 14px; }
+element normal.normal, element alternate.normal, element normal.active, element alternate.active { background-color: transparent; text-color: @texto; }
+element selected.normal, element selected.active { background-color: @marcado; text-color: #FFFFFF; }
+element-icon { size: 34px; }
+element-text { text-color: inherit; vertical-align: 0.5; }

@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Application
+Name=Ajustes al iniciar (xfce-estilo-mac)
+Comment=Efectos segun la placa de video, dock centrado y pantalla siempre prendida
+Exec=@HOME@/.local/bin/ajustes-al-iniciar.sh

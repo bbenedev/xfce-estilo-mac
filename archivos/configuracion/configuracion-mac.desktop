@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Configuración del Sistema
+Comment=Configuración estilo Mac
+Exec=python3 @HOME@/.local/share/configuracion-mac/configuracion.py
+Icon=preferences-system
+Categories=Settings;
+StartupWMClass=Configuracion.py

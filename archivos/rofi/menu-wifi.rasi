@@ -1,0 +1,9 @@
+/* Menu de Wi-Fi: desplegable arriba a la derecha, como el de Mac */
+@import "config.rasi"
+configuration { font: "Inter 12"; }
+window { location: northeast; anchor: northeast; x-offset: -260px; y-offset: 50px; width: 460px; border-radius: 12px; padding: 6px; }
+mainbox { children: [inputbar, listview]; }
+inputbar { padding: 8px 14px; children: [entry]; }
+listview { lines: 10; border: 0; padding: 0; spacing: 0; scrollbar: false; }
+element { padding: 8px 14px; border-radius: 6px; }
+element-icon { size: 0; }

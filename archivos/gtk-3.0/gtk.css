@@ -1,0 +1,27 @@
+/* Barras estilo Mac (con la placa de video andando y efectos prendidos):
+   el fondo de los paneles lo pinta esta regla, redondeado y semitransparente.
+   Los complementos que corren aparte (XfcePanelWindowWrapper) pintan el mismo gris para no dejar agujeros. */
+#XfcePanelWindow { background-color: rgba(38, 38, 40, 0.72); border-radius: 22px; }
+#XfcePanelWindowWrapper.xfce4-panel.background { background-color: rgba(38, 38, 40, 0.72); }
+
+/* Alt+Tab estilo Cmd+Tab de Mac: barra oscura redondeada con iconos grandes */
+#xfwm-tabwin {
+    -XfwmTabwinWidget-icon-size: 96px;
+    -XfwmTabwinWidget-preview-size: 96px;
+    background-color: rgba(38, 38, 40, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 24px;
+    padding: 18px;
+}
+#xfwm-tabwin button { background: transparent; border: none; box-shadow: none; border-radius: 16px; padding: 12px; }
+#xfwm-tabwin button:checked, #xfwm-tabwin button:hover { background-color: rgba(255, 255, 255, 0.16); }
+#xfwm-tabwin label { font-family: "Inter"; font-size: 15px; color: #F2F2F7; }
+
+/* Misma separacion para todos los iconos de las barras (volumen, campana, lupa, dock) */
+#XfcePanelWindow button { padding-left: 7px; padding-right: 7px; }
+
+/* Archivos (Thunar) estilo Finder: barra lateral un poco distinta y seleccion suave en vez del bloque de color */
+window.thunar scrolledwindow.shortcuts-pane, window.thunar scrolledwindow.shortcuts-pane treeview.view { background-color: #262628; }
+window.thunar scrolledwindow.shortcuts-pane treeview.view:selected,
+window.thunar scrolledwindow.shortcuts-pane treeview.view:selected:hover { background-color: rgba(255, 255, 255, 0.14); color: #FFFFFF; border-radius: 6px; }
+window.thunar scrolledwindow.shortcuts-pane treeview.view:hover { background-color: rgba(255, 255, 255, 0.06); }

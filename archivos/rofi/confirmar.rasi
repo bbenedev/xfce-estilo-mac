@@ -1,0 +1,11 @@
+/* Ventanita de confirmacion (reiniciar, apagar, cerrar sesion) */
+@import "config.rasi"
+configuration { font: "Inter 13"; }
+window { location: center; y-offset: 0; width: 460px; border-radius: 14px; padding: 18px; }
+mainbox { children: [message, listview]; spacing: 14px; }
+message { padding: 4px; }
+textbox { horizontal-align: 0.5; }
+listview { lines: 1; columns: 2; border: 0; padding: 0; spacing: 10px; fixed-columns: true; }
+element { padding: 10px; border-radius: 10px; background-color: #3A3A3C; }
+element-text { horizontal-align: 0.5; }
+element-icon { size: 0; }

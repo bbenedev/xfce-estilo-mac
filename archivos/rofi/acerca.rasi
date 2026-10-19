@@ -1,0 +1,6 @@
+/* "Acerca de esta compu" */
+@import "config.rasi"
+window { location: center; y-offset: 0; width: 900px; border-radius: 16px; padding: 34px 40px; }
+mainbox { children: [message]; }
+message { padding: 0; border: 0; }
+textbox { font: "Inter 16"; horizontal-align: 0; vertical-align: 0; }
